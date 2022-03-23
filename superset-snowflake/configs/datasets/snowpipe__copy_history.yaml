@@ -1,0 +1,65 @@
+- columns:
+  - column_name: event_name
+    expression: SPLIT(SPLIT(FILE_NAME, '/') [ARRAY_SIZE(SPLIT(FILE_NAME,'/'))-1],
+      '-') [0]::STRING
+  - column_name: load_date
+    is_dttm: true
+    type: DATE
+  - column_name: last_load_time
+    is_dttm: true
+    type: TIMESTAMP_LTZ
+  - column_name: pipe_received_time
+    is_dttm: true
+    type: TIMESTAMP_LTZ
+  - column_name: created_timestamp
+    is_dttm: true
+    type: TIMESTAMP_NTZ
+  - column_name: first_error_character_pos
+    type: DECIMAL(38, 0)
+  - column_name: first_error_line_number
+    type: DECIMAL(38, 0)
+  - column_name: row_parsed
+    type: DECIMAL(38, 0)
+  - column_name: error_count
+    type: DECIMAL(38, 0)
+  - column_name: row_count
+    type: DECIMAL(38, 0)
+  - column_name: file_size
+    type: DECIMAL(38, 0)
+  - column_name: error_limit
+    type: DECIMAL(38, 0)
+  - column_name: first_error_column_name
+    type: VARCHAR(16777216)
+  - column_name: table_catalog_name
+    type: VARCHAR(16777216)
+  - column_name: table_schema_name
+    type: VARCHAR(16777216)
+  - column_name: pipe_catalog_name
+    type: VARCHAR(16777216)
+  - column_name: pipe_schema_name
+    type: VARCHAR(16777216)
+  - column_name: first_error_message
+    type: VARCHAR(16777216)
+  - column_name: table_name
+    type: VARCHAR(16777216)
+  - column_name: stage_location
+    type: VARCHAR(16777216)
+  - column_name: file_name
+    type: VARCHAR(16777216)
+  - column_name: pipe_name
+    type: VARCHAR(16777216)
+  - column_name: status
+    type: VARCHAR(16777216)
+  - column_name: record_id
+    type: VARCHAR(32)
+  - column_name: created_by
+    type: VARCHAR(47)
+  main_dttm_col: load_date
+  metrics:
+  - expression: count(1)
+    extra: '{}'
+    metric_name: total_no_of_files
+    verbose_name: total_no_of_files
+  schema: presentation
+  sql: ''
+  table_name: snowpipe__copy_history

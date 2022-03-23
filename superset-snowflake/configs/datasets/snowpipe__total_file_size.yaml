@@ -1,0 +1,24 @@
+- columns:
+  - column_name: LOAD_DATE
+    is_dttm: true
+    type: DATETIME
+  - column_name: TOTAL_NO_OF_RECORDS
+    type: INT
+  - column_name: TOTAL_FILE_SIZE
+    type: INT
+  - column_name: TOTAL_NO_OF_FILES
+    type: INT
+  - column_name: STATUS
+    type: STRING
+  metrics:
+  - expression: count(*)
+    metric_name: count
+  schema: presentation
+  sql: "SELECT LOAD_DATE AS LOAD_DATE\r\n\t,STATUS\r\n\t,count(1) AS total_no_of_files\r\
+    \n\t,sum(row_count) AS total_no_of_records\r\n\t,sum(file_size) AS total_file_size\r\
+    \nFROM snowpipe__copy_history\r\nWHERE LOAD_DATE IN (\r\n\t\tCURRENT_DATE () +\
+    \ 1\r\n\t\t,CURRENT_DATE ()\r\n\t\t,CURRENT_DATE () - 1\r\n\t\t,CURRENT_DATE ()\
+    \ - 2\r\n\t\t,CURRENT_DATE () - 3\r\n\t\t,CURRENT_DATE () - 4\r\n\t\t,CURRENT_DATE\
+    \ () - 5\r\n\t\t,CURRENT_DATE () - 6\r\n\t\t,CURRENT_DATE () - 7\r\n\t\t)\r\n\
+    GROUP BY LOAD_DATE\r\n\t,STATUS\r\nORDER BY LOAD_DATE DESC"
+  table_name: snowpipe__total_file_size

@@ -1,0 +1,19 @@
+- columns:
+  - column_name: LAST_LOAD_TIME
+    is_dttm: true
+    type: DATETIME
+  - column_name: FILE_NAME
+    type: STRING
+  - column_name: ROW_COUNT
+    type: INT
+  - column_name: FILE_SIZE
+    type: INT
+  metrics: []
+  schema: presentation
+  sql: "SELECT FILE_NAME\r\n\t,STATUS\r\n\t,LAST_LOAD_TIME\r\n\t,ROW_COUNT\r\n\t,FILE_SIZE\r\
+    \nFROM snowpipe__copy_history\r\nWHERE LOAD_DATE IN (\r\n\t\tCURRENT_DATE () +\
+    \ 1\r\n\t\t,CURRENT_DATE ()\r\n\t\t,CURRENT_DATE () - 1\r\n\t\t,CURRENT_DATE ()\
+    \ - 2\r\n\t\t,CURRENT_DATE () - 3\r\n\t\t,CURRENT_DATE () - 4\r\n\t\t,CURRENT_DATE\
+    \ () - 5\r\n\t\t,CURRENT_DATE () - 6\r\n\t\t,CURRENT_DATE () - 7\r\n\t\t)\r\n\t\
+    AND STATUS <> 'Loaded'\r\nORDER BY LOAD_DATE\r\n\t,FILE_NAME DESC;"
+  table_name: snowpipe__failed_pipes

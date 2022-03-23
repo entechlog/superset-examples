@@ -1,0 +1,26 @@
+- columns:
+  - column_name: load_date
+    is_dttm: true
+    type: DATE
+  - column_name: created_timestamp
+    is_dttm: true
+    type: TIMESTAMP_NTZ
+  - column_name: bytes_inserted
+    type: DECIMAL(38, 0)
+  - column_name: files_inserted
+    type: DECIMAL(38, 0)
+  - column_name: credits_used
+    type: DECIMAL(38, 9)
+  - column_name: record_id
+    type: VARCHAR(32)
+  - column_name: created_by
+    type: VARCHAR(48)
+  main_dttm_col: load_date
+  metrics:
+  - expression: MAX(credits_used)
+    extra: '{}'
+    metric_name: total_credits_used
+    verbose_name: total_credits_used
+  schema: presentation
+  sql: ''
+  table_name: snowpipe__usage_history

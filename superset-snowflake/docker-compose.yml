@@ -1,0 +1,34 @@
+---
+version: "3"
+
+services:
+  apache-superset:
+    build: ./docker/superset/
+    container_name: apache-superset
+    ports:
+      - "8088:8088"
+    restart: on-failure:3
+    tty: true
+    volumes:
+      - //var/run/docker.sock:/var/run/docker.sock:rw
+      - ./configs/:/usr/src/configs/
+
+  openssh-client:
+    image: entechlog/openssh-client
+    container_name: openssh-client
+    build: ./docker/openssh-client/
+    depends_on:
+      - apache-superset
+    restart: on-failure:3
+    tty: true
+    volumes:
+      - //var/run/docker.sock:/var/run/docker.sock:rw
+      - ./scripts/initialize-superset.sh:/usr/src/scripts/initialize-superset.sh
+    command: 
+      # In the command section, $ are replaced with $$ to avoid the error 'Invalid interpolation format for "command" option'
+      - bash 
+      - -c 
+      - |
+        sleep 30
+        /usr/src/scripts/initialize-superset.sh
+        sleep 10
