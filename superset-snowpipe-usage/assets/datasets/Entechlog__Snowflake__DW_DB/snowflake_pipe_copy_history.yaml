@@ -1,0 +1,343 @@
+table_name: snowflake_pipe_copy_history
+main_dttm_col: LOAD_DATE
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: DEV_ENTECHLOG_DW_DB
+schema: fact
+sql: ''
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: fee9e6b3-d974-4cb4-ae19-d0ae9c9ebd75
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: PROCESSING_TIME_SECONDS
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(18, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: FIRST_ERROR_CHARACTER_POS
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ROW_PARSED
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: FIRST_ERROR_LINE_NUMBER
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ERROR_COUNT
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ROW_COUNT
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: FILE_SIZE
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ERROR_LIMIT
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: TABLE_CATALOG_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: DATABASE_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: TABLE_SCHEMA_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: TABLE_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: SCHEMA_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: STAGE_LOCATION
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: FIRST_ERROR_COLUMN_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: FIRST_ERROR_MESSAGE
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ENVIRONMENT_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: FILE_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: PIPE_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: STATUS
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: DATE_ID
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(128)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: LOAD_DATE
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: LAST_LOAD_TIME
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP_LTZ
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: PIPE_RECEIVED_TIME
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP_LTZ
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+version: 1.0.0
+database_uuid: df3119d8-6f2b-43c3-bb7d-0592de5def2b

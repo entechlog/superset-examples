@@ -1,0 +1,62 @@
+slice_name: Snowflake | Query Summary
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 30__table
+  viz_type: table
+  slice_id: 150
+  query_mode: raw
+  groupby:
+  - DATE
+  - QUERY_ID
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    DATE: true
+    START_TIME: true
+    END_TIME: true
+  all_columns:
+  - QUERY_ID
+  - SESSION_ID
+  - START_TIME
+  - USER_NAME
+  - ROLE_NAME
+  - END_TIME
+  - WAREHOUSE_NAME
+  - WAREHOUSE_SIZE
+  - WAREHOUSE_ENVIRONMENT
+  - QUERY_TYPE
+  - BYTES_SCANNED
+  - BYTES_WRITTEN
+  - BYTES_SPILLED_TO_LOCAL_STORAGE
+  - BYTES_SPILLED_TO_REMOTE_STORAGE
+  - EXECUTION_TIME_SECONDS
+  - ACTUAL_EXECUTION_TIME_SECONDS
+  - ESTIMATED_QUERY_COST_USD
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: DATE
+  order_by_cols: []
+  row_limit: 1000
+  table_timestamp_format: smart_date
+  include_search: true
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":30,"type":"table"},"force":false,"queries":[{"filters":[{"col":"DATE","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["QUERY_ID","SESSION_ID","START_TIME","USER_NAME","ROLE_NAME","END_TIME","WAREHOUSE_NAME","WAREHOUSE_SIZE","WAREHOUSE_ENVIRONMENT","QUERY_TYPE","BYTES_SCANNED","BYTES_WRITTEN","BYTES_SPILLED_TO_LOCAL_STORAGE","BYTES_SPILLED_TO_REMOTE_STORAGE","EXECUTION_TIME_SECONDS","ACTUAL_EXECUTION_TIME_SECONDS","ESTIMATED_QUERY_COST_USD"],"orderby":[],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"30__table","viz_type":"table","slice_id":150,"query_mode":"raw","groupby":["DATE","QUERY_ID"],"time_grain_sqla":"P1D","temporal_columns_lookup":{"DATE":true,"START_TIME":true,"END_TIME":true},"all_columns":["QUERY_ID","SESSION_ID","START_TIME","USER_NAME","ROLE_NAME","END_TIME","WAREHOUSE_NAME","WAREHOUSE_SIZE","WAREHOUSE_ENVIRONMENT","QUERY_TYPE","BYTES_SCANNED","BYTES_WRITTEN","BYTES_SPILLED_TO_LOCAL_STORAGE","BYTES_SPILLED_TO_REMOTE_STORAGE","EXECUTION_TIME_SECONDS","ACTUAL_EXECUTION_TIME_SECONDS","ESTIMATED_QUERY_COST_USD"],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"DATE"}],"order_by_cols":[],"row_limit":1000,"table_timestamp_format":"smart_date","include_search":true,"allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","conditional_formatting":[],"extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 0897d167-fad5-45b3-8ccc-b36527375508
+version: 1.0.0
+dataset_uuid: d14836d8-c133-4406-82e5-0be45e265bed

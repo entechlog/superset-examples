@@ -1,0 +1,649 @@
+dashboard_title: Platform | Snowpipe Overview
+description: null
+css: ''
+slug: platform-snowpipe-overview
+certified_by: Siva Nadesan
+certification_details: 'Data Sources: Snowflake'
+published: true
+uuid: 24d6d58a-afdd-4ac9-aba1-147ce4ba9665
+position:
+  CHART-explore-425-1:
+    children: []
+    id: CHART-explore-425-1
+    meta:
+      chartId: 291
+      height: 26
+      sliceName: Platfrom | Snowpipe Count
+      uuid: b566a0cf-2bda-4990-9002-b5d491ec4101
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2Mykcku_yN
+    type: CHART
+  CHART-explore-426-1:
+    children: []
+    id: CHART-explore-426-1
+    meta:
+      chartId: 290
+      height: 50
+      sliceName: Platform | Snowpipe Status
+      uuid: cdb0a7fc-d612-4bd3-8ff8-1260a8ecbe50
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-kq3DHB1YGB
+    type: CHART
+  CHART-explore-427-1:
+    children: []
+    id: CHART-explore-427-1
+    meta:
+      chartId: 278
+      height: 50
+      sliceName: Platform | Snowpipe Data Loaded Daily (GB)
+      uuid: e882c921-11a9-431b-a966-b74b7dc0db1f
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2Hso_hWa7U
+    type: CHART
+  CHART-explore-428-1:
+    children: []
+    id: CHART-explore-428-1
+    meta:
+      chartId: 288
+      height: 50
+      sliceName: Platform | Snowpipe Files Count - Processed Daily
+      uuid: 5bbe302e-e682-4b4b-b613-666bab008858
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2Hso_hWa7U
+    type: CHART
+  CHART-explore-429-1:
+    children: []
+    id: CHART-explore-429-1
+    meta:
+      chartId: 280
+      height: 50
+      sliceName: Platform | Snowpipe Files Errored
+      uuid: 20a97b40-b6d6-45cd-816f-4a90b9d48b68
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-E3W6M7-Kk
+    type: CHART
+  CHART-explore-430-1:
+    children: []
+    id: CHART-explore-430-1
+    meta:
+      chartId: 279
+      height: 50
+      sliceName: Platform | Snowpipe Cost Daily ($)
+      uuid: 95ee2c2f-4808-4ce4-99af-4897a7c1f54d
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Ia1vouOvnj
+    type: CHART
+  CHART-explore-431-1:
+    children: []
+    id: CHART-explore-431-1
+    meta:
+      chartId: 286
+      height: 52
+      sliceName: Platform | Snowpipe Credits Daily
+      uuid: 68170b89-5958-4fd9-9dbd-8039d73157cc
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Ia1vouOvnj
+    type: CHART
+  CHART-explore-432-1:
+    children: []
+    id: CHART-explore-432-1
+    meta:
+      chartId: 285
+      height: 26
+      sliceName: Platform | Snowpipe Credit Used
+      uuid: 5cebea62-4e05-4bb7-ba2c-202f28208991
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2Mykcku_yN
+    type: CHART
+  CHART-explore-433-1:
+    children: []
+    id: CHART-explore-433-1
+    meta:
+      chartId: 283
+      height: 26
+      sliceName: Platform | Snowpipe File Count - Processed
+      uuid: 451d9a72-0a79-4aac-8e76-ea6376349ea4
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2Mykcku_yN
+    type: CHART
+  CHART-explore-437-1:
+    children: []
+    id: CHART-explore-437-1
+    meta:
+      chartId: 289
+      height: 26
+      sliceName: Platform | Snowpipe Cost
+      uuid: e94a3054-587e-46cd-a6d2-627084503541
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2Mykcku_yN
+    type: CHART
+  CHART-explore-438-1:
+    children: []
+    id: CHART-explore-438-1
+    meta:
+      chartId: 287
+      height: 26
+      sliceName: Platform | Snowpipe Data Loaded (GB)
+      uuid: 0b299049-fbf6-4b17-acf0-dd4482ab84df
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2Mykcku_yN
+    type: CHART
+  CHART-explore-439-1:
+    children: []
+    id: CHART-explore-439-1
+    meta:
+      chartId: 282
+      height: 26
+      sliceName: Platform | Snowpipe File Count - Errored
+      uuid: 692618b0-0b8d-40aa-837a-9140c7411ef2
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2Mykcku_yN
+    type: CHART
+  CHART-explore-440-1:
+    children: []
+    id: CHART-explore-440-1
+    meta:
+      chartId: 281
+      height: 50
+      sliceName: Platform | Snowpipe Files Count - Errored Daily
+      uuid: a93b666e-b505-4131-930e-abe229fb30cc
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-LYtplBhxDy
+    type: CHART
+  CHART-explore-441-1:
+    children: []
+    id: CHART-explore-441-1
+    meta:
+      chartId: 292
+      height: 50
+      sliceName: Platform | Snowpipe Processing Time Daily (Sec)
+      uuid: 5de23104-ed3f-4bf1-9aa5-87567a5cb7a9
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-LYtplBhxDy
+    type: CHART
+  CHART-explore-442-1:
+    children: []
+    id: CHART-explore-442-1
+    meta:
+      chartId: 284
+      height: 50
+      sliceName: Platform | Snowpipe Details
+      uuid: 50753d88-438e-47dd-bba9-e1588d937673
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-kq3DHB1YGB
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-2Mykcku_yN
+    - ROW-kq3DHB1YGB
+    - ROW-E3W6M7-Kk
+    - ROW-2Hso_hWa7U
+    - ROW-Ia1vouOvnj
+    - ROW-LYtplBhxDy
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Platform | Snowpipe Overview
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-2Hso_hWa7U:
+    children:
+    - CHART-explore-427-1
+    - CHART-explore-428-1
+    id: ROW-2Hso_hWa7U
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-2Mykcku_yN:
+    children:
+    - CHART-explore-425-1
+    - CHART-explore-432-1
+    - CHART-explore-437-1
+    - CHART-explore-438-1
+    - CHART-explore-433-1
+    - CHART-explore-439-1
+    id: ROW-2Mykcku_yN
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-E3W6M7-Kk:
+    children:
+    - CHART-explore-429-1
+    id: ROW-E3W6M7-Kk
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Ia1vouOvnj:
+    children:
+    - CHART-explore-430-1
+    - CHART-explore-431-1
+    id: ROW-Ia1vouOvnj
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-LYtplBhxDy:
+    children:
+    - CHART-explore-440-1
+    - CHART-explore-441-1
+    id: ROW-LYtplBhxDy
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-kq3DHB1YGB:
+    children:
+    - CHART-explore-426-1
+    - CHART-explore-442-1
+    id: ROW-kq3DHB1YGB
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '426':
+      crossFilters:
+        chartsInScope:
+        - 425
+        - 427
+        - 428
+        - 429
+        - 430
+        - 431
+        - 432
+        - 433
+        - 437
+        - 438
+        - 439
+        - 440
+        - 441
+        - 442
+        scope: global
+      id: 426
+    '427':
+      crossFilters:
+        chartsInScope:
+        - 425
+        - 426
+        - 428
+        - 429
+        - 430
+        - 431
+        - 432
+        - 433
+        - 437
+        - 438
+        - 439
+        - 440
+        - 441
+        - 442
+        scope: global
+      id: 427
+    '428':
+      crossFilters:
+        chartsInScope:
+        - 425
+        - 426
+        - 427
+        - 429
+        - 430
+        - 431
+        - 432
+        - 433
+        - 437
+        - 438
+        - 439
+        - 440
+        - 441
+        - 442
+        scope: global
+      id: 428
+    '429':
+      crossFilters:
+        chartsInScope:
+        - 425
+        - 426
+        - 427
+        - 428
+        - 430
+        - 431
+        - 432
+        - 433
+        - 437
+        - 438
+        - 439
+        - 440
+        - 441
+        - 442
+        scope: global
+      id: 429
+    '430':
+      crossFilters:
+        chartsInScope:
+        - 425
+        - 426
+        - 427
+        - 428
+        - 429
+        - 431
+        - 432
+        - 433
+        - 437
+        - 438
+        - 439
+        - 440
+        - 441
+        - 442
+        scope: global
+      id: 430
+    '431':
+      crossFilters:
+        chartsInScope:
+        - 425
+        - 426
+        - 427
+        - 428
+        - 429
+        - 430
+        - 432
+        - 433
+        - 437
+        - 438
+        - 439
+        - 440
+        - 441
+        - 442
+        scope: global
+      id: 431
+    '440':
+      crossFilters:
+        chartsInScope:
+        - 425
+        - 426
+        - 427
+        - 428
+        - 429
+        - 430
+        - 431
+        - 432
+        - 433
+        - 437
+        - 438
+        - 439
+        - 441
+        - 442
+        scope: global
+      id: 440
+    '441':
+      crossFilters:
+        chartsInScope:
+        - 425
+        - 426
+        - 427
+        - 428
+        - 429
+        - 430
+        - 431
+        - 432
+        - 433
+        - 437
+        - 438
+        - 439
+        - 440
+        - 442
+        scope: global
+      id: 441
+    '442':
+      crossFilters:
+        chartsInScope:
+        - 425
+        - 426
+        - 427
+        - 428
+        - 429
+        - 430
+        - 431
+        - 432
+        - 433
+        - 437
+        - 438
+        - 439
+        - 440
+        - 441
+        scope: global
+      id: 442
+  color_scheme: googleCategory20c
+  color_scheme_domain: []
+  cross_filters_enabled: true
+  expanded_slices: {}
+  filter_bar_orientation: HORIZONTAL
+  global_chart_configuration:
+    chartsInScope:
+    - 425
+    - 426
+    - 427
+    - 428
+    - 429
+    - 430
+    - 431
+    - 432
+    - 433
+    - 437
+    - 438
+    - 439
+    - 440
+    - 441
+    - 442
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+  label_colors: {}
+  native_filter_configuration:
+  - cascadeParentIds: []
+    chartsInScope:
+    - 427
+    - 428
+    - 429
+    - 430
+    - 431
+    - 432
+    - 433
+    - 437
+    - 438
+    - 439
+    - 440
+    - 441
+    controlValues:
+      enableEmptyFilter: false
+    defaultDataMask:
+      extraFormData:
+        time_range: Last month
+      filterState:
+        value: Last month
+    description: ''
+    filterType: filter_time
+    id: NATIVE_FILTER-K48Xw3qTg
+    name: Time range
+    scope:
+      excluded:
+      - 291
+      - 290
+      - 284
+      rootPath:
+      - ROOT_ID
+    tabsInScope: []
+    targets:
+    - {}
+    type: NATIVE_FILTER
+  - cascadeParentIds: []
+    chartsInScope:
+    - 425
+    - 426
+    - 427
+    - 428
+    - 429
+    - 430
+    - 431
+    - 432
+    - 433
+    - 437
+    - 438
+    - 439
+    - 440
+    - 441
+    - 442
+    controlValues:
+      defaultToFirstItem: false
+      enableEmptyFilter: false
+      inverseSelection: false
+      multiSelect: false
+      searchAllOptions: false
+    defaultDataMask:
+      extraFormData:
+        filters:
+        - col: ENVIRONMENT_NAME
+          op: IN
+          val:
+          - PRD
+      filterState:
+        label: PRD
+        validateMessage: false
+        validateStatus: false
+        value:
+        - PRD
+    description: ''
+    filterType: filter_select
+    id: NATIVE_FILTER-MT6x1v0JY
+    name: Environment
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    tabsInScope: []
+    targets:
+    - column:
+        name: ENVIRONMENT_NAME
+      datasetUuid: 166d14c1-50a0-4f04-b9d9-64606104db35
+    type: NATIVE_FILTER
+  - cascadeParentIds:
+    - NATIVE_FILTER-MT6x1v0JY
+    chartsInScope:
+    - 425
+    - 426
+    - 427
+    - 428
+    - 429
+    - 430
+    - 431
+    - 432
+    - 433
+    - 437
+    - 438
+    - 439
+    - 440
+    - 441
+    - 442
+    controlValues:
+      defaultToFirstItem: false
+      enableEmptyFilter: false
+      inverseSelection: false
+      multiSelect: true
+      searchAllOptions: false
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    description: ''
+    filterType: filter_select
+    id: NATIVE_FILTER-x0aOPhUnL
+    name: Source
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    tabsInScope: []
+    targets:
+    - column:
+        name: SCHEMA_NAME
+      datasetUuid: 166d14c1-50a0-4f04-b9d9-64606104db35
+    type: NATIVE_FILTER
+  refresh_frequency: 28800
+  shared_label_colors:
+    Data Loaded: '#3366cc'
+  timed_refresh_immune_slices: []
+version: 1.0.0

@@ -1,0 +1,2 @@
+version: "1.0.0"   # required
+type: assets       # OPTIONAL but nice: Database | Dataset | Chart | Dashboard | assets

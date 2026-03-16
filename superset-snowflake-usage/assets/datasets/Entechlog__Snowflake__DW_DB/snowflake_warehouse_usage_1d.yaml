@@ -1,0 +1,414 @@
+table_name: snowflake_warehouse_usage_1d
+main_dttm_col: DATE
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: DEV_ENTECHLOG_DW_DB
+schema: obt
+sql: null
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: a0671c1e-dd3e-4ebb-9246-4e39aab84741
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: ACTIVE_HOURS
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(18, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: USAGE_SESSIONS
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(18, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: HAS_CLOUD_SERVICES_USAGE
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(1, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: IS_ACTIVE_WAREHOUSE
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(1, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: HAS_COMPUTE_USAGE
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(1, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: DAY_OF_WEEK
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(2, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: DAY
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(2, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: QUARTER
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(2, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: MONTH
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(2, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: DATE_ID
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: WAREHOUSE_ID
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: YEAR
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(4, 0)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: CREDITS_PER_ACTIVE_HOUR
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 12)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: AVG_CREDITS_PER_SESSION
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 12)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: COST_PER_CREDIT
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 12)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: TOTAL_CREDITS_CLOUD_SERVICES
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 9)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: TOTAL_CREDITS_COMPUTE
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 9)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: TOTAL_CREDITS_USED
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 9)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: MAX_CREDITS_PER_SESSION
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 9)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: STAGING_COST_USD
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 9)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: TOTAL_COST_USD
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 9)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: PRODUCTION_COST_USD
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 9)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: DEVELOPMENT_COST_USD
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 9)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: MIN_CREDITS_PER_SESSION
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL(38, 9)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: WAREHOUSE_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: UTILIZATION_PATTERN
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(19)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: ENVIRONMENT
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(5)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: MONTH_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(7)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: LAST_USAGE_TIME
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP_LTZ
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: DATE
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP_NTZ
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: FIRST_USAGE_TIME
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP_LTZ
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: IS_WEEKEND
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: df3119d8-6f2b-43c3-bb7d-0592de5def2b

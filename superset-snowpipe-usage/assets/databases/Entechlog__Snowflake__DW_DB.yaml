@@ -1,0 +1,14 @@
+database_name: Entechlog | Snowflake | DW DB
+#sqlalchemy_uri: snowflake://{user}:{password}@{account}.{region}/{database}?role={role}&warehouse={warehouse}
+sqlalchemy_uri: sqlite:////app/superset_home/examples.db
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_csv_upload: false
+extra:
+  allows_virtual_table_explore: true
+uuid: df3119d8-6f2b-43c3-bb7d-0592de5def2b
+version: 1.0.0
