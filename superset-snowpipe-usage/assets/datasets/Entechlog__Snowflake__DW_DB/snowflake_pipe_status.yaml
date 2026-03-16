@@ -1,0 +1,199 @@
+table_name: snowflake_pipe_status
+main_dttm_col: CREATED
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: DEV_ENTECHLOG_DW_DB
+schema: obt
+sql: ''
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 166d14c1-50a0-4f04-b9d9-64606104db35
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: DATABASE_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: TARGET_TABLE
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: SCHEMA_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: ENVIRONMENT_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: PIPE_NAME
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: PIPE_STATUS
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: PATTERN
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: COMMENT
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(16777216)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: DATE_ID
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(128)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: OWNER_ROLE_TYPE
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: VARCHAR(13)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: LAST_ALTERED_TIMESTAMP
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP_LTZ
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: CREATED_TIMESTAMP
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP_LTZ
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: DELETED_TIMESTAMP
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP_LTZ
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: IS_DELETED
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: df3119d8-6f2b-43c3-bb7d-0592de5def2b

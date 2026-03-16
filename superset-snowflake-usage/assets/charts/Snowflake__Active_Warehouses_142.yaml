@@ -1,0 +1,44 @@
+slice_name: Snowflake | Active Warehouses
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 28__table
+  viz_type: big_number_total
+  slice_id: 142
+  metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: COUNT(DISTINCT CASE WHEN is_active_warehouse = 1 THEN warehouse_name END)
+    optionName: metric_0wyf1bc00lib_1mq7pjzm02j
+    sqlExpression: COUNT(DISTINCT CASE WHEN is_active_warehouse = 1 THEN warehouse_name
+      END)
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: DATE
+  header_font_size: 0.6
+  subheader_font_size: 0.125
+  y_axis_format: ~g
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":28,"type":"table"},"force":false,"queries":[{"filters":[{"col":"DATE","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"COUNT(DISTINCT
+  CASE WHEN is_active_warehouse = 1 THEN warehouse_name END)","optionName":"metric_0wyf1bc00lib_1mq7pjzm02j","sqlExpression":"COUNT(DISTINCT
+  CASE WHEN is_active_warehouse = 1 THEN warehouse_name END)"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"28__table","viz_type":"big_number_total","slice_id":142,"metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"COUNT(DISTINCT
+  CASE WHEN is_active_warehouse = 1 THEN warehouse_name END)","optionName":"metric_0wyf1bc00lib_1mq7pjzm02j","sqlExpression":"COUNT(DISTINCT
+  CASE WHEN is_active_warehouse = 1 THEN warehouse_name END)"},"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"DATE"}],"header_font_size":0.6,"subheader_font_size":0.125,"y_axis_format":"~g","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 9fb25ad0-e9c0-41e0-92c7-00c1987fdf2b
+version: 1.0.0
+dataset_uuid: a0671c1e-dd3e-4ebb-9246-4e39aab84741

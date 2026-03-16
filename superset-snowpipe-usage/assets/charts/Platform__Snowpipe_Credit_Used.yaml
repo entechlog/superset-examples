@@ -1,0 +1,60 @@
+slice_name: Platform | Snowpipe Credit Used
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_j57puim94yn_qasbfqvil7d
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    operatorId: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: DATE
+  conditional_formatting: []
+  dashboards:
+  - 48
+  datasource: 45__table
+  extra_form_data: {}
+  header_font_size: 0.3
+  metric:
+    aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: TOTAL_CREDITS_USED
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 2459
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL(38, 9)
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(TOTAL_CREDITS_USED)
+    optionName: metric_ka4r4aznxyf_8u5qtxqvevf
+    sqlExpression: null
+  slice_id: 432
+  subheader: ''
+  subheader_font_size: 0.15
+  time_format: smart_date
+  viz_type: big_number_total
+  y_axis_format: SMART_NUMBER
+  annotation_layers: []
+cache_timeout: null
+uuid: 5cebea62-4e05-4bb7-ba2c-202f28208991
+version: 1.0.0
+dataset_uuid: 28908d7a-4d00-4747-a945-feee6679330f

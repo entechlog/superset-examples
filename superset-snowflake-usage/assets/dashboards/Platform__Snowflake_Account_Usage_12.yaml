@@ -1,0 +1,1691 @@
+dashboard_title: Platform | Snowflake Account Usage
+description: Comprehensive monitoring of Snowflake costs, performance, and usage patterns
+css: ".header-style {\n  background-color: #29B5E8;\n  color: white;\n  padding: 10px;\n\
+  \  border-radius: 5px;\n}\n.cost-metric {\n  font-size: 24px;\n  font-weight: bold;\n\
+  }\n.alert-metric {\n  color: #dc3545;\n}\n"
+slug: snowflake-account-usage
+certified_by: Data Platform Team
+certification_details: 'Data Sources: Snowflake Account Usage'
+published: true
+uuid: 13bc06c8-229c-4686-b437-0f2e2366d973
+position:
+  CHART-0UZqSYIBAqeiNkMZvTdus:
+    children: []
+    id: CHART-0UZqSYIBAqeiNkMZvTdus
+    meta:
+      chartId: 161
+      height: 50
+      sliceName: Snowflake | Storage Cost By Environment
+      sliceNameOverride: Storage Cost By Environment
+      uuid: d6496803-1d2f-465f-8f5c-a280fb061f9b
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - ROW-WWbSKz57jkneZmDkV0EaL
+    type: CHART
+  CHART-GNPCwl6cK7n_BMXFsyVxy:
+    children: []
+    id: CHART-GNPCwl6cK7n_BMXFsyVxy
+    meta:
+      chartId: 146
+      height: 19
+      sliceName: Snowflake | Avg Daily Compute Cost
+      sliceNameOverride: Avg Daily Compute Cost
+      uuid: cb8739a1-32ab-4bd9-a0ab-7658f0bf65a3
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - ROW-hD84zt4fvBsyfUzOS3R-1
+    type: CHART
+  CHART-Qpv-Ki4yoqbfA557xv72k:
+    children: []
+    id: CHART-Qpv-Ki4yoqbfA557xv72k
+    meta:
+      chartId: 145
+      height: 19
+      sliceName: Snowflake | Avg Daily Credits
+      sliceNameOverride: Avg Daily Compute Credits
+      uuid: 6bd615cd-54c8-4644-86a4-86d59044814a
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - ROW-hD84zt4fvBsyfUzOS3R-1
+    type: CHART
+  CHART-explore-141-1:
+    children: []
+    id: CHART-explore-141-1
+    meta:
+      chartId: 141
+      height: 19
+      sliceName: Snowflake | Total Warehouses
+      sliceNameOverride: Total Warehouses
+      uuid: 1e014cff-4850-4278-9915-a21d868eacb2
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - ROW-KqNFFvVEX7a7tc8J7nGaT
+    type: CHART
+  CHART-explore-142-1:
+    children: []
+    id: CHART-explore-142-1
+    meta:
+      chartId: 142
+      height: 19
+      sliceName: Snowflake | Active Warehouses
+      sliceNameOverride: Active Warehouses
+      uuid: 9fb25ad0-e9c0-41e0-92c7-00c1987fdf2b
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - ROW-KqNFFvVEX7a7tc8J7nGaT
+    type: CHART
+  CHART-explore-143-1:
+    children: []
+    id: CHART-explore-143-1
+    meta:
+      chartId: 143
+      height: 19
+      sliceName: Snowflake |  Total Credits Used
+      sliceNameOverride: Total Credits Used
+      uuid: f97ceefb-b606-49be-a5a9-8d48cfbe0968
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - ROW-hD84zt4fvBsyfUzOS3R-1
+    type: CHART
+  CHART-explore-144-1:
+    children: []
+    id: CHART-explore-144-1
+    meta:
+      chartId: 144
+      height: 19
+      sliceName: Snowflake | Total Compute Cost
+      sliceNameOverride: Total Compute Cost
+      uuid: 7489eee0-7989-4f4c-a42e-cb13e1c0418d
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - ROW-hD84zt4fvBsyfUzOS3R-1
+    type: CHART
+  CHART-explore-147-1:
+    children: []
+    id: CHART-explore-147-1
+    meta:
+      chartId: 147
+      height: 65
+      sliceName: Snowflake | Credits by Warehouse
+      sliceNameOverride: Credits by Warehouse
+      uuid: 2635ae87-20f6-4ece-8bf2-52b30769b126
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - ROW-e2hGQGDbsGH_4mW-uT8_s
+    type: CHART
+  CHART-explore-148-1:
+    children: []
+    id: CHART-explore-148-1
+    meta:
+      chartId: 148
+      height: 65
+      sliceName: Snowflake | Cost by Warehouse
+      sliceNameOverride: Cost by Warehouse
+      uuid: d29f10d9-b703-4a37-b72c-d0a91a776728
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - ROW-e2hGQGDbsGH_4mW-uT8_s
+    type: CHART
+  CHART-explore-150-1:
+    children: []
+    id: CHART-explore-150-1
+    meta:
+      chartId: 150
+      height: 50
+      sliceName: Snowflake | Warehouse Summary
+      sliceNameOverride: Warehouse Summary
+      uuid: 430c9fa5-e024-42d1-9647-7b7b80824923
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - ROW-WMCKsKGCgsfsvsOzlQlX7
+    type: CHART
+  CHART-explore-151-1:
+    children: []
+    id: CHART-explore-151-1
+    meta:
+      chartId: 151
+      height: 50
+      sliceName: Snowflake | Warehouse Cost By Environment Comparison
+      sliceNameOverride: Compute Cost By Environment
+      uuid: e7f791af-f41b-4b2f-a1bd-636282e846ef
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - ROW-WMCKsKGCgsfsvsOzlQlX7
+    type: CHART
+  CHART-explore-152-1:
+    children: []
+    id: CHART-explore-152-1
+    meta:
+      chartId: 152
+      height: 14
+      sliceName: Snowflake | Total Storage Size
+      sliceNameOverride: Total Storage Size
+      uuid: b7a5a775-9a5e-45b7-9983-1f99eeb35f48
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - ROW-MavcX98euYuOaLVBHmpQu
+    type: CHART
+  CHART-explore-153-1:
+    children: []
+    id: CHART-explore-153-1
+    meta:
+      chartId: 153
+      height: 14
+      sliceName: Snowflake | Stage Storage Size
+      sliceNameOverride: Stage Storage Size
+      uuid: 1dc30a94-92a9-4ac4-bc3a-6be2fa78473b
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - ROW-MavcX98euYuOaLVBHmpQu
+    type: CHART
+  CHART-explore-154-1:
+    children: []
+    id: CHART-explore-154-1
+    meta:
+      chartId: 154
+      height: 14
+      sliceName: Snowflake | Table Storage Size
+      sliceNameOverride: Table Storage Size
+      uuid: ff7381a6-057a-4c81-9b87-6b8131b211a9
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - ROW-MavcX98euYuOaLVBHmpQu
+    type: CHART
+  CHART-explore-155-1:
+    children: []
+    id: CHART-explore-155-1
+    meta:
+      chartId: 155
+      height: 14
+      sliceName: Snowflake | Failsafe Storage Size
+      sliceNameOverride: Failsafe Storage Size
+      uuid: 1224bd13-3b07-4e7e-83a9-d14ce400092c
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - ROW-MavcX98euYuOaLVBHmpQu
+    type: CHART
+  CHART-explore-156-1:
+    children: []
+    id: CHART-explore-156-1
+    meta:
+      chartId: 156
+      height: 13
+      sliceName: Snowflake |  Storage Cost
+      sliceNameOverride: Storage Cost
+      uuid: abe239ff-4adb-42bf-b3cd-2fa22233dc15
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - ROW-j1s6Cd52dUcRXPD1ERq2q
+    type: CHART
+  CHART-explore-157-1:
+    children: []
+    id: CHART-explore-157-1
+    meta:
+      chartId: 157
+      height: 13
+      sliceName: Snowflake | Storage Growth Rate
+      sliceNameOverride: Storage Growth
+      uuid: 126d3969-3bf3-4b7a-be86-48693683cbd3
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - ROW-j1s6Cd52dUcRXPD1ERq2q
+    type: CHART
+  CHART-explore-158-1:
+    children: []
+    id: CHART-explore-158-1
+    meta:
+      chartId: 158
+      height: 50
+      sliceName: Snowflake | Storage Size By Environment
+      sliceNameOverride: Storage Size By Environment
+      uuid: 4015b98a-5fb7-4c81-9cfe-0a391ddfc0cc
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - ROW-vdG7OBPlLPx4nXWftXeFF
+    type: CHART
+  CHART-explore-159-1:
+    children: []
+    id: CHART-explore-159-1
+    meta:
+      chartId: 159
+      height: 50
+      sliceName: Snowflake | Storage Size by Type
+      sliceNameOverride: Storage Size by Type
+      uuid: f4ebcb99-38a5-4287-b13f-c994447a6b2b
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - ROW-WWbSKz57jkneZmDkV0EaL
+    type: CHART
+  CHART-explore-160-1:
+    children: []
+    id: CHART-explore-160-1
+    meta:
+      chartId: 160
+      height: 13
+      sliceName: Snowflake |  Total Databases
+      sliceNameOverride: Total Databases
+      uuid: 362a5d7d-7c65-4099-8d43-ec2250976a1a
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - ROW-j1s6Cd52dUcRXPD1ERq2q
+    type: CHART
+  CHART-explore-162-1:
+    children: []
+    id: CHART-explore-162-1
+    meta:
+      chartId: 162
+      height: 50
+      sliceName: Snowflake | Storage Size By Database
+      sliceNameOverride: Storage Size By Database
+      uuid: 84b2fd3c-dcc9-4499-9419-a2c3fda7d267
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - ROW-vdG7OBPlLPx4nXWftXeFF
+    type: CHART
+  CHART-explore-163-1:
+    children: []
+    id: CHART-explore-163-1
+    meta:
+      chartId: 163
+      height: 16
+      sliceName: Snowflake | Total Queries
+      sliceNameOverride: Total Queries
+      uuid: 21655ce3-a4b6-40a6-9c42-2606a6adb1dc
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    - ROW-jmo-lb1doF4RaO8pVsYqe
+    type: CHART
+  CHART-explore-164-1:
+    children: []
+    id: CHART-explore-164-1
+    meta:
+      chartId: 164
+      height: 16
+      sliceName: Snowflake | Successful Queries
+      sliceNameOverride: Successful Queries
+      uuid: 557a8822-6793-4ee4-84c0-b81dda5b9ab5
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    - ROW-jmo-lb1doF4RaO8pVsYqe
+    type: CHART
+  CHART-explore-165-1:
+    children: []
+    id: CHART-explore-165-1
+    meta:
+      chartId: 165
+      height: 16
+      sliceName: Snowflake | Failed Queries
+      sliceNameOverride: Failed Queries
+      uuid: b4b6f706-0472-48d3-b5c5-15941fa1b6b3
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    - ROW-jmo-lb1doF4RaO8pVsYqe
+    type: CHART
+  CHART-explore-166-1:
+    children: []
+    id: CHART-explore-166-1
+    meta:
+      chartId: 166
+      height: 16
+      sliceName: Snowflake | Avg Query Execution Time
+      sliceNameOverride: Avg Query Execution Time
+      uuid: f3a7387c-6ac3-4bdf-8cf8-613fca18b546
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    - ROW-nqVa3cLE5Sgz_COCtbNP8
+    type: CHART
+  CHART-explore-167-1:
+    children: []
+    id: CHART-explore-167-1
+    meta:
+      chartId: 167
+      height: 16
+      sliceName: Snowflake | Total Query Cost
+      sliceNameOverride: Total Query Cost
+      uuid: 3e22c08e-f862-4224-a329-d2a604c4ce4d
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    - ROW-nqVa3cLE5Sgz_COCtbNP8
+    type: CHART
+  CHART-explore-168-1:
+    children: []
+    id: CHART-explore-168-1
+    meta:
+      chartId: 168
+      height: 16
+      sliceName: Snowflake | Query Date
+      sliceNameOverride: Query Date
+      uuid: d138c25f-944b-46a8-a142-bac455c86ae0
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    - ROW-jmo-lb1doF4RaO8pVsYqe
+    type: CHART
+  CHART-explore-169-1:
+    children: []
+    id: CHART-explore-169-1
+    meta:
+      chartId: 169
+      height: 50
+      sliceName: Snowflake | Query Count by Environment
+      sliceNameOverride: Query Count by Environment
+      uuid: 1adb57fe-3ec4-4a26-8d30-f043cd66442c
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    - ROW-AA6HCPeY0mmbIvIM5TrEA
+    type: CHART
+  CHART-explore-170-1:
+    children: []
+    id: CHART-explore-170-1
+    meta:
+      chartId: 170
+      height: 50
+      sliceName: Snowflake | Query Cost by Environment
+      sliceNameOverride: Query Cost by Environment
+      uuid: 2af33266-7b0a-439b-b0eb-c2385fc5eeef
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    - ROW-AA6HCPeY0mmbIvIM5TrEA
+    type: CHART
+  CHART-explore-171-1:
+    children: []
+    id: CHART-explore-171-1
+    meta:
+      chartId: 171
+      height: 50
+      sliceName: Snowflake | Query Count by Warehouse
+      sliceNameOverride: Query Count by Warehouse
+      uuid: 1dbd8153-cb77-4b06-a4fc-06561a0e17e5
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    - ROW-4627Qa8YDaNpOgTVjklJE
+    type: CHART
+  CHART-explore-172-1:
+    children: []
+    id: CHART-explore-172-1
+    meta:
+      chartId: 172
+      height: 50
+      sliceName: Snowflake | Query Cost by Warehouse
+      sliceNameOverride: Query Cost by Warehouse
+      uuid: 154ea010-8389-4a5e-8b59-df78c7d2fe3f
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    - ROW-4627Qa8YDaNpOgTVjklJE
+    type: CHART
+  CHART-explore-173-1:
+    children: []
+    id: CHART-explore-173-1
+    meta:
+      chartId: 173
+      height: 58
+      sliceName: Snowflake | Query Summary
+      sliceNameOverride: Query Summary
+      uuid: 0897d167-fad5-45b3-8ccc-b36527375508
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-COaF4f_IEqghKcxrX2PPg
+    type: CHART
+  CHART-explore-34-1:
+    children: []
+    id: CHART-explore-34-1
+    meta:
+      chartId: 121
+      height: 50
+      sliceName: Snowflake | Warehouse Utilization Heatmap
+      sliceNameOverride: Warehouse Utilization Heatmap
+      uuid: ab747cbf-5d90-4ab4-9071-363ca6bcd423
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - ROW-Tipz86Cz5wxYOo_yL2y3W
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Platform | Snowflake Account Usage
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-4627Qa8YDaNpOgTVjklJE:
+    children:
+    - CHART-explore-171-1
+    - CHART-explore-172-1
+    id: ROW-4627Qa8YDaNpOgTVjklJE
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    type: ROW
+  ROW-AA6HCPeY0mmbIvIM5TrEA:
+    children:
+    - CHART-explore-169-1
+    - CHART-explore-170-1
+    id: ROW-AA6HCPeY0mmbIvIM5TrEA
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    type: ROW
+  ROW-KqNFFvVEX7a7tc8J7nGaT:
+    children:
+    - CHART-explore-141-1
+    - CHART-explore-142-1
+    id: ROW-KqNFFvVEX7a7tc8J7nGaT
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    type: ROW
+  ROW-MavcX98euYuOaLVBHmpQu:
+    children:
+    - CHART-explore-152-1
+    - CHART-explore-153-1
+    - CHART-explore-154-1
+    - CHART-explore-155-1
+    id: ROW-MavcX98euYuOaLVBHmpQu
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    type: ROW
+  ROW-Tipz86Cz5wxYOo_yL2y3W:
+    children:
+    - CHART-explore-34-1
+    id: ROW-Tipz86Cz5wxYOo_yL2y3W
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    type: ROW
+  ROW-WMCKsKGCgsfsvsOzlQlX7:
+    children:
+    - CHART-explore-151-1
+    - CHART-explore-150-1
+    id: ROW-WMCKsKGCgsfsvsOzlQlX7
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    type: ROW
+  ROW-WWbSKz57jkneZmDkV0EaL:
+    children:
+    - CHART-0UZqSYIBAqeiNkMZvTdus
+    - CHART-explore-159-1
+    id: ROW-WWbSKz57jkneZmDkV0EaL
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    type: ROW
+  ROW-e2hGQGDbsGH_4mW-uT8_s:
+    children:
+    - CHART-explore-147-1
+    - CHART-explore-148-1
+    id: ROW-e2hGQGDbsGH_4mW-uT8_s
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    type: ROW
+  ROW-hD84zt4fvBsyfUzOS3R-1:
+    children:
+    - CHART-explore-143-1
+    - CHART-explore-144-1
+    - CHART-Qpv-Ki4yoqbfA557xv72k
+    - CHART-GNPCwl6cK7n_BMXFsyVxy
+    id: ROW-hD84zt4fvBsyfUzOS3R-1
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    type: ROW
+  ROW-j1s6Cd52dUcRXPD1ERq2q:
+    children:
+    - CHART-explore-160-1
+    - CHART-explore-157-1
+    - CHART-explore-156-1
+    id: ROW-j1s6Cd52dUcRXPD1ERq2q
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    type: ROW
+  ROW-j9olxG3LztKT6yqBY0-Hv:
+    children:
+    - CHART-explore-173-1
+    id: ROW-j9olxG3LztKT6yqBY0-Hv
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    type: ROW
+  ROW-jmo-lb1doF4RaO8pVsYqe:
+    children:
+    - CHART-explore-168-1
+    - CHART-explore-163-1
+    - CHART-explore-164-1
+    - CHART-explore-165-1
+    id: ROW-jmo-lb1doF4RaO8pVsYqe
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    type: ROW
+  ROW-nqVa3cLE5Sgz_COCtbNP8:
+    children:
+    - CHART-explore-167-1
+    - CHART-explore-166-1
+    id: ROW-nqVa3cLE5Sgz_COCtbNP8
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    type: ROW
+  ROW-vdG7OBPlLPx4nXWftXeFF:
+    children:
+    - CHART-explore-158-1
+    - CHART-explore-162-1
+    id: ROW-vdG7OBPlLPx4nXWftXeFF
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    type: ROW
+  TAB-kn6iuithCW9L0qTW0SHS1:
+    children:
+    - ROW-MavcX98euYuOaLVBHmpQu
+    - ROW-j1s6Cd52dUcRXPD1ERq2q
+    - ROW-vdG7OBPlLPx4nXWftXeFF
+    - ROW-WWbSKz57jkneZmDkV0EaL
+    id: TAB-kn6iuithCW9L0qTW0SHS1
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Storage
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    type: TAB
+  TAB-qLnJrNA2sBq_gJDS-O1rV:
+    children:
+    - ROW-KqNFFvVEX7a7tc8J7nGaT
+    - ROW-hD84zt4fvBsyfUzOS3R-1
+    - ROW-e2hGQGDbsGH_4mW-uT8_s
+    - ROW-WMCKsKGCgsfsvsOzlQlX7
+    - ROW-Tipz86Cz5wxYOo_yL2y3W
+    id: TAB-qLnJrNA2sBq_gJDS-O1rV
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Compute
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    type: TAB
+  TAB-zWB2LQyNFps3PtoZ0utSm:
+    children:
+    - ROW-jmo-lb1doF4RaO8pVsYqe
+    - ROW-nqVa3cLE5Sgz_COCtbNP8
+    - ROW-AA6HCPeY0mmbIvIM5TrEA
+    - ROW-4627Qa8YDaNpOgTVjklJE
+    - ROW-j9olxG3LztKT6yqBY0-Hv
+    id: TAB-zWB2LQyNFps3PtoZ0utSm
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Query
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-0tWIlIq40gdhw5Uh9GSzv
+    type: TAB
+  TABS-0tWIlIq40gdhw5Uh9GSzv:
+    children:
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+    id: TABS-0tWIlIq40gdhw5Uh9GSzv
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: TABS
+metadata:
+  chart_configuration:
+    '147':
+      id: 147
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 148
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
+        - 173
+    '148':
+      id: 148
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
+        - 173
+    '150':
+      id: 150
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
+        - 173
+    '151':
+      id: 151
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 150
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
+        - 173
+    '158':
+      id: 158
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
+        - 173
+    '159':
+      id: 159
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
+        - 173
+    '161':
+      id: 161
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
+        - 173
+    '162':
+      id: 162
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
+        - 173
+    '169':
+      id: 169
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 170
+        - 171
+        - 172
+        - 173
+    '170':
+      id: 170
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 171
+        - 172
+        - 173
+    '171':
+      id: 171
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 172
+        - 173
+    '172':
+      id: 172
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 173
+    '173':
+      id: 173
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 141
+        - 142
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+        - 171
+        - 172
+  color_scheme: supersetColors
+  cross_filters_enabled: true
+  expanded_slices: {}
+  filter_bar_orientation: HORIZONTAL
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 121
+    - 141
+    - 142
+    - 143
+    - 144
+    - 145
+    - 146
+    - 147
+    - 148
+    - 150
+    - 151
+    - 152
+    - 153
+    - 154
+    - 155
+    - 156
+    - 157
+    - 158
+    - 159
+    - 160
+    - 161
+    - 162
+    - 163
+    - 164
+    - 165
+    - 166
+    - 167
+    - 168
+    - 169
+    - 170
+    - 171
+    - 172
+    - 173
+  label_colors:
+    Compute Cost: '#1FA8F1'
+    Storage Cost: '#454E7C'
+    Clustering Cost: '#5AC189'
+    Snowpipe Cost: '#FF7F44'
+    Production: '#D32F2F'
+    Staging: '#F57C00'
+    Development: '#388E3C'
+    Test: '#1976D2'
+    Total Queries: '#3366cc'
+    Slow Queries: '#FF7F00'
+    Failed Queries: '#DC3545'
+  native_filter_configuration:
+  - id: NATIVE_FILTER-HNoPgqexR-uRTcTRNXlJI
+    controlValues:
+      enableEmptyFilter: true
+    name: Time Range
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData:
+        time_range: Last quarter
+      filterState:
+        value: Last quarter
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-qLnJrNA2sBq_gJDS-O1rV
+      - TAB-kn6iuithCW9L0qTW0SHS1
+      - TAB-zWB2LQyNFps3PtoZ0utSm
+      excluded:
+      - 152
+      - 153
+      - 154
+      - 155
+      - 156
+      - 157
+      - 160
+      - 163
+      - 164
+      - 165
+      - 166
+      - 167
+      - 168
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 121
+    - 141
+    - 142
+    - 143
+    - 144
+    - 145
+    - 146
+    - 147
+    - 148
+    - 150
+    - 151
+    - 158
+    - 159
+    - 161
+    - 162
+    - 169
+    - 170
+    tabsInScope:
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+  - id: NATIVE_FILTER-M3QUmazRhIpZJowIOvvbN
+    controlValues:
+      enableEmptyFilter: true
+    name: Time Grain
+    filterType: filter_timegrain
+    targets:
+    - datasetUuid: a0671c1e-dd3e-4ebb-9246-4e39aab84741
+    defaultDataMask:
+      extraFormData:
+        time_grain_sqla: P1D
+      filterState:
+        label: Day
+        value:
+        - P1D
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-qLnJrNA2sBq_gJDS-O1rV
+      - TAB-kn6iuithCW9L0qTW0SHS1
+      - TAB-zWB2LQyNFps3PtoZ0utSm
+      excluded:
+      - 152
+      - 153
+      - 154
+      - 155
+      - 156
+      - 157
+      - 160
+      - 163
+      - 164
+      - 165
+      - 166
+      - 167
+      - 168
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 121
+    - 141
+    - 142
+    - 143
+    - 144
+    - 145
+    - 146
+    - 147
+    - 148
+    - 150
+    - 151
+    - 158
+    - 159
+    - 161
+    - 162
+    tabsInScope:
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - TAB-qLnJrNA2sBq_gJDS-O1rV
+  - id: NATIVE_FILTER-IFzA-go6Zn1RniujdjxQM
+    controlValues:
+      enableEmptyFilter: true
+      defaultToFirstItem: false
+      multiSelect: false
+      searchAllOptions: false
+      inverseSelection: false
+    name: Storage Unit
+    filterType: filter_select
+    targets:
+    - column:
+        name: UNIT
+      datasetUuid: ffb327a2-b2ec-4393-a4a7-aa7cca23bb1a
+    defaultDataMask:
+      extraFormData:
+        filters:
+        - col: UNIT
+          op: IN
+          val:
+          - MB
+      filterState:
+        validateMessage: false
+        validateStatus: false
+        label: MB
+        value:
+        - MB
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-kn6iuithCW9L0qTW0SHS1
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 152
+    - 153
+    - 154
+    - 155
+    - 156
+    - 157
+    - 158
+    - 159
+    - 160
+    - 161
+    - 162
+    - 163
+    - 164
+    - 165
+    - 166
+    - 167
+    - 168
+    tabsInScope:
+    - TAB-kn6iuithCW9L0qTW0SHS1
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+  - id: NATIVE_FILTER-hehNAcfZcccwBAWp2rGq9
+    time_range: Last day
+    controlValues:
+      sortAscending: false
+      enableEmptyFilter: true
+      defaultToFirstItem: true
+      multiSelect: false
+      searchAllOptions: false
+      inverseSelection: false
+    granularity_sqla: null
+    requiredFirst: true
+    name: Storage Date
+    filterType: filter_select
+    targets:
+    - column:
+        name: DATE
+      datasetUuid: ffb327a2-b2ec-4393-a4a7-aa7cca23bb1a
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-kn6iuithCW9L0qTW0SHS1
+      excluded:
+      - 161
+      - 158
+      - 159
+      - 162
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 152
+    - 153
+    - 154
+    - 155
+    - 156
+    - 157
+    - 160
+    tabsInScope:
+    - TAB-kn6iuithCW9L0qTW0SHS1
+  - id: NATIVE_FILTER-cOa1MeAiKcbxSp5VijFjr
+    time_range: Last day
+    controlValues:
+      sortAscending: false
+      enableEmptyFilter: true
+      defaultToFirstItem: true
+      multiSelect: false
+      searchAllOptions: false
+      inverseSelection: false
+    granularity_sqla: null
+    requiredFirst: true
+    name: Query Date
+    filterType: filter_select
+    targets:
+    - column:
+        name: DATE
+      datasetUuid: d14836d8-c133-4406-82e5-0be45e265bed
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-zWB2LQyNFps3PtoZ0utSm
+      excluded:
+      - 169
+      - 170
+      - 171
+      - 172
+      - 173
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 163
+    - 164
+    - 165
+    - 166
+    - 167
+    - 168
+    - 170
+    tabsInScope:
+    - TAB-zWB2LQyNFps3PtoZ0utSm
+  refresh_frequency: 28800
+  timed_refresh_immune_slices: []
+  default_filters: '{}'
+  stagger_refresh: true
+  shared_label_colors:
+  - DEV_ENTECHLOG_DBT_WH_XS
+  - DEV_ENTECHLOG_DATADOG_WH_XS
+  - ALL_ENTECHLOG_QUERY_WH_XS
+  - DEV
+  - OTHER
+  - SYS
+  - SHARED
+  - ACCOUNT_STAGES
+  - DEV_ENTECHLOG_RAW_DB
+  - DEV_ENTECHLOG_DW_DB
+  - SNOWFLAKE
+  - DEV_DEMO_DB_MYSQL_SNOW_CONNECTOR
+  - DEV_ENTECHLOG_PREP_DB
+  - TEST
+  - COMPUTE_SERVICE_WH_USER_TASKS_POOL_XSMALL_0
+  - COMPUTE_SERVICE_WH
+  - COMPUTE_SERVICE_WH_USER_TASKS_POOL_MEDIUM_0
+  - COMPUTE_SERVICE_WH_USER_TASKS_POOL_XSMALL_1
+  - COMPUTE_SERVICE_WH_USER_TASKS_POOL_XSMALL_5
+  - COMPUTE_SERVICE_WH_USER_TASKS_POOL_XSMALL_2
+  - COMPUTE_SERVICE_WH_USER_TASKS_POOL_XSMALL_3
+  - COMPUTE_SERVICE_WH_USER_TASKS_POOL_XSMALL_4
+  - COMPUTE_SERVICE_WH_SNOWFLAKEDB_UPGRADE_POOL_XLARGE_0
+  - COMPUTE_SERVICE_WH_NATIVE_APPLICATION_UPGRADE_POOL_LARGE_0
+  - TST_ENTECHLOG_QUERY_WH_XS
+  - DEV_ENTECHLOG_SNOW_CONNECTOR_WH_XS
+  - TRANSFORMING
+  - PC_DBT_WH
+  - <NULL>
+  - DEV_ENTECHLOG_CONNECTOR_WH_XS
+  - DEV_ENTECHLOG_DEMO_WH_XS
+  - DEV_ENTECHLOG_KAFKA_WH_XS
+  map_label_colors:
+    DEV: '#454E7C'
+    SYS: '#1FA8C9'
+    OTHER: '#1FA8C9'
+    <NULL>: '#D3B3DA'
+    DEV_ENTECHLOG_DBT_WH_XS: '#1FA8C9'
+    ALL_ENTECHLOG_QUERY_WH_XS: '#454E7C'
+  color_scheme_domain:
+  - '#1FA8C9'
+  - '#454E7C'
+  - '#5AC189'
+  - '#FF7F44'
+  - '#666666'
+  - '#E04355'
+  - '#FCC700'
+  - '#A868B7'
+  - '#3CCCCB'
+  - '#A38F79'
+  - '#8FD3E4'
+  - '#A1A6BD'
+  - '#ACE1C4'
+  - '#FEC0A1'
+  - '#B2B2B2'
+  - '#EFA1AA'
+  - '#FDE380'
+  - '#D3B3DA'
+  - '#9EE5E5'
+  - '#D1C6BC'
+version: 1.0.0

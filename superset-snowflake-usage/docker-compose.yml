@@ -1,0 +1,78 @@
+services:
+  key-generator:
+    image: alpine:latest
+    container_name: key-generator
+    volumes:
+      - ./configs/:/usr/src/configs/
+    command:
+      - sh
+      - -c
+      - |
+        mkdir -p /usr/src/configs
+        echo "===> Generating SUPERSET_SECRET_KEY"
+        
+        # Generate a 42-character secret key using only /dev/urandom
+        SECRET_KEY=$$(dd if=/dev/urandom bs=32 count=1 2>/dev/null | base64 | tr -d '+/=' | head -c 42)
+        
+        # Write to configs directory
+        echo "$$SECRET_KEY" > /usr/src/configs/superset_key
+        
+        echo "===> Generated secret key successfully"
+        echo "===> Key starts with: $$(echo $$SECRET_KEY | head -c 10)..."
+
+  apache-superset:
+    build: ./docker/superset/
+    container_name: apache-superset
+    ports:
+      - "8088:8088"
+    environment:
+      SUPERSET_SECRET_KEY: $(cat /usr/src/configs/superset_key)
+      SUPERSET_CONFIG_PATH: /usr/src/configs/superset_config.py
+    restart: on-failure:3
+    tty: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:rw
+      - ./configs/:/usr/src/configs/
+      - ./assets/:/usr/src/assets/
+    command:
+      - bash
+      - -c
+      - |
+        echo "===> Waiting for secret key..."
+        
+        # Wait for the secret key file to exist
+        while [ ! -f /usr/src/configs/superset_key ]; do
+          echo "Waiting for secret key generation..."
+          sleep 2
+        done
+        
+        # Read the secret key and export it
+        export SUPERSET_SECRET_KEY=$$(cat /usr/src/configs/superset_key)
+        echo "===> Secret key loaded (length: $${#SUPERSET_SECRET_KEY})"
+        
+        # Start superset normally
+        exec superset run -p 8088 --with-threads --reload --debugger --host=0.0.0.0
+    depends_on:
+      key-generator:
+        condition: service_completed_successfully
+
+  openssh-client:
+    image: entechlog/openssh-client
+    container_name: openssh-client
+    build: ./docker/openssh-client/
+    depends_on:
+      - apache-superset
+    restart: on-failure:3
+    tty: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:rw
+      - ./configs/:/usr/src/configs/
+      - ./scripts/initialize-superset.sh:/usr/src/scripts/initialize-superset.sh
+    command:
+      - bash
+      - -c
+      - |
+        echo "===> Waiting for Superset to be ready..."
+        sleep 45
+        echo "===> Running initialization scripts"
+        /usr/src/scripts/initialize-superset.sh

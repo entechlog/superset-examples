@@ -1,0 +1,70 @@
+slice_name: Platform | Snowpipe Details
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: CREATED
+  all_columns:
+  - expressionType: SQL
+    label: Environment
+    sqlExpression: ENVIRONMENT_NAME::varchar
+  - expressionType: SQL
+    label: Database
+    sqlExpression: DATABASE_NAME::varchar
+  - expressionType: SQL
+    label: Schema
+    sqlExpression: SCHEMA_NAME::varchar
+  - expressionType: SQL
+    label: Pipe
+    sqlExpression: PIPE_NAME::varchar
+  - expressionType: SQL
+    label: Pipe Status
+    sqlExpression: PIPE_STATUS::varchar
+  - expressionType: SQL
+    label: Target Table
+    sqlExpression: TARGET_TABLE::varchar
+  - expressionType: SQL
+    label: Created
+    sqlExpression: CREATED_TIMESTAMP::timestamp
+  - expressionType: SQL
+    label: Last Altered
+    sqlExpression: LAST_ALTERED_TIMESTAMP::timestamp
+  - expressionType: SQL
+    label: Deleted
+    sqlExpression: DELETED_TIMESTAMP::timestamp
+  - expressionType: SQL
+    label: Pattern
+    sqlExpression: PATTERN::varchar
+  color_pn: true
+  comparison_color_scheme: Green
+  dashboards:
+  - 48
+  datasource: 46__table
+  extra_form_data: {}
+  groupby: []
+  order_by_cols:
+  - '["DATABASE_NAME", true]'
+  - '["SCHEMA_NAME", true]'
+  - '["PIPE_NAME", true]'
+  percent_metrics: []
+  query_mode: raw
+  row_limit: 1000
+  show_cell_bars: true
+  slice_id: 442
+  table_timestamp_format: smart_date
+  temporal_columns_lookup:
+    CREATED_TIMESTAMP: true
+    DELETED_TIMESTAMP: true
+    LAST_ALTERED_TIMESTAMP: true
+  viz_type: table
+  annotation_layers: []
+cache_timeout: null
+uuid: 50753d88-438e-47dd-bba9-e1588d937673
+version: 1.0.0
+dataset_uuid: 166d14c1-50a0-4f04-b9d9-64606104db35

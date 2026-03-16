@@ -1,0 +1,43 @@
+{{ config(
+      alias = 'snowflake_pipe_copy_history'
+    , materialized = 'view'
+    , tags = ['prep', 'fact']
+) }}
+
+SELECT
+    DATE(LAST_LOAD_TIME) AS LOAD_DATE,
+    FILE_NAME,
+    STAGE_LOCATION,
+    LAST_LOAD_TIME,
+    ROW_COUNT,
+    ROW_PARSED,
+    FILE_SIZE,
+    FIRST_ERROR_MESSAGE,
+    FIRST_ERROR_LINE_NUMBER,
+    FIRST_ERROR_CHARACTER_POS,
+    FIRST_ERROR_COLUMN_NAME,
+    ERROR_COUNT,
+    ERROR_LIMIT,
+    STATUS,
+    TABLE_CATALOG_NAME,
+    TABLE_SCHEMA_NAME,
+    TABLE_NAME,
+    CASE
+        WHEN SUBSTRING(PIPE_CATALOG_NAME, 1, 3) IN ('DEV', 'STG', 'PRD') THEN SUBSTRING(PIPE_CATALOG_NAME, 1, 3)
+        WHEN UPPER(SUBSTRING(PIPE_CATALOG_NAME, LENGTH(PIPE_CATALOG_NAME) - 4, 5)) = '-TEST' THEN 'TEST'
+        WHEN SUBSTRING(PIPE_CATALOG_NAME, LENGTH(PIPE_CATALOG_NAME) - 2, 3) = 'EST' THEN CONCAT('OLD-', 'TEST')
+        ELSE CONCAT('OLD-', SUBSTRING(PIPE_CATALOG_NAME, LENGTH(PIPE_CATALOG_NAME) - 2, 3))
+    END AS ENVIRONMENT_NAME,
+    PIPE_CATALOG_NAME AS DATABASE_NAME,
+    PIPE_SCHEMA_NAME AS SCHEMA_NAME,
+    PIPE_NAME,
+    PIPE_RECEIVED_TIME,
+    TIMESTAMPDIFF('second', PIPE_RECEIVED_TIME, LAST_LOAD_TIME) AS PROCESSING_TIME_SECONDS
+FROM
+    snowflake.account_usage.copy_history
+    {{ filter_data(
+        src_column_key = 'to_date(LAST_LOAD_TIME)',
+        src_operator = '=',
+        src_column_val = "'" ~ var('batch_cycle_date') ~ "'"
+    ) }}
+    AND PIPE_CATALOG_NAME IS NOT NULL

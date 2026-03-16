@@ -1,0 +1,78 @@
+slice_name: Platform | Snowpipe Files Errored
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_s3cjeorhqan_pqcs4zilov
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: LOAD_DATE
+  - clause: WHERE
+    comparator: '0'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_h4rkfh8t2io_pu5ytf4yj1
+    isExtra: false
+    isNew: false
+    operator: '>'
+    operatorId: GREATER_THAN
+    sqlExpression: null
+    subject: ERROR_COUNT
+  all_columns:
+  - expressionType: SQL
+    label: Date
+    sqlExpression: LOAD_DATE::varchar
+  - datasourceWarning: true
+    expressionType: SQL
+    label: Environment
+    sqlExpression: ENVIRONMENT_NAME::varchar
+  - datasourceWarning: true
+    expressionType: SQL
+    label: Database
+    sqlExpression: DATABASE_NAME::varchar
+  - datasourceWarning: true
+    expressionType: SQL
+    label: Schema
+    sqlExpression: SCHEMA_NAME::varchar
+  - datasourceWarning: true
+    expressionType: SQL
+    label: Pipe
+    sqlExpression: PIPE_NAME::varchar
+  - datasourceWarning: true
+    expressionType: SQL
+    label: Error Message
+    sqlExpression: FIRST_ERROR_MESSAGE::varchar
+  color_pn: true
+  comparison_color_scheme: Green
+  dashboards:
+  - 48
+  datasource: 44__table
+  extra_form_data: {}
+  groupby:
+  - PIPE_NAME
+  order_by_cols:
+  - '["DATE_ID", false]'
+  percent_metrics: []
+  query_mode: raw
+  row_limit: 1000
+  show_cell_bars: true
+  slice_id: 429
+  table_timestamp_format: smart_date
+  temporal_columns_lookup:
+    LAST_LOAD_TIME: true
+    LOAD_DATE: true
+    PIPE_RECEIVED_TIME: true
+  viz_type: table
+  annotation_layers: []
+cache_timeout: null
+uuid: 20a97b40-b6d6-45cd-816f-4a90b9d48b68
+version: 1.0.0
+dataset_uuid: fee9e6b3-d974-4cb4-ae19-d0ae9c9ebd75

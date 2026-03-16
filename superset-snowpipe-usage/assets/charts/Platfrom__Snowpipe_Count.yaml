@@ -1,0 +1,43 @@
+slice_name: Platfrom | Snowpipe Count
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_9j3zk1ujlnm_y51hvvetm5
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: CREATED
+  conditional_formatting: []
+  dashboards:
+  - 48
+  datasource: 46__table
+  extra_form_data: {}
+  header_font_size: 0.3
+  metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Snowpipe Count
+    optionName: metric_5wjguig7ski_tuh45jarf4j
+    sqlExpression: COUNT(DISTINCT DATABASE_NAME, SCHEMA_NAME, PIPE_NAME)
+  slice_id: 425
+  subheader: ''
+  subheader_font_size: 0.15
+  time_format: smart_date
+  viz_type: big_number_total
+  y_axis_format: SMART_NUMBER
+  annotation_layers: []
+cache_timeout: null
+uuid: b566a0cf-2bda-4990-9002-b5d491ec4101
+version: 1.0.0
+dataset_uuid: 166d14c1-50a0-4f04-b9d9-64606104db35

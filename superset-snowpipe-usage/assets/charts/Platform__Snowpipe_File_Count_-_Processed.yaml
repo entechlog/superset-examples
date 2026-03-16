@@ -1,0 +1,60 @@
+slice_name: Platform | Snowpipe File Count - Processed
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_esa2qkbsnp_g6zg3m01f66
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    operatorId: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: DATE
+  conditional_formatting: []
+  dashboards:
+  - 48
+  datasource: 45__table
+  extra_form_data: {}
+  header_font_size: 0.3
+  metric:
+    aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: TOTAL_FILES_PROCESSED
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 2457
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL(18, 0)
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: true
+    label: Files processed
+    optionName: metric_queqofx599d_9r50seezwbm
+    sqlExpression: null
+  slice_id: 433
+  subheader: ''
+  subheader_font_size: 0.15
+  time_format: smart_date
+  viz_type: big_number_total
+  y_axis_format: SMART_NUMBER
+  annotation_layers: []
+cache_timeout: null
+uuid: 451d9a72-0a79-4aac-8e76-ea6376349ea4
+version: 1.0.0
+dataset_uuid: 28908d7a-4d00-4747-a945-feee6679330f

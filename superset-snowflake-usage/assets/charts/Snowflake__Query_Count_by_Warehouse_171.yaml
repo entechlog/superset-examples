@@ -1,0 +1,90 @@
+slice_name: Snowflake | Query Count by Warehouse
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_line
+params:
+  datasource: 30__table
+  viz_type: echarts_timeseries_line
+  slice_id: 169
+  x_axis: DATE
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  metrics:
+  - aggregate: COUNT_DISTINCT
+    column:
+      advanced_data_type: null
+      changed_on: '2025-07-20T05:22:51.626447'
+      column_name: QUERY_ID
+      created_on: '2025-07-20T05:22:51.626440'
+      description: null
+      expression: null
+      extra: null
+      filterable: true
+      groupby: true
+      id: 905
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: VARCHAR(16777216)
+      type_generic: 1
+      uuid: 9d8ed44c-87f8-4555-9b4e-a5b153cebc9e
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: COUNT_DISTINCT(QUERY_ID)
+    optionName: metric_z3banm4ekes_5parw0hvvfm
+    sqlExpression: null
+  groupby:
+  - WAREHOUSE_NAME
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: DATE
+  order_desc: true
+  row_limit: '15'
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title: ''
+  x_axis_title_margin: 15
+  y_axis_title: Queries
+  y_axis_title_margin: 15
+  y_axis_title_position: Top
+  sort_series_type: sum
+  color_scheme: supersetColors
+  seriesType: line
+  show_value: false
+  only_total: true
+  opacity: 0.2
+  markerSize: 6
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: false
+  showTooltipTotal: true
+  showTooltipPercentage: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  minorSplitLine: false
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":30,"type":"table"},"force":false,"queries":[{"filters":[{"col":"DATE","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"DATE","label":"DATE","expressionType":"SQL"},"WAREHOUSE_NAME"],"metrics":[{"aggregate":"COUNT_DISTINCT","column":{"advanced_data_type":null,"changed_on":"2025-07-20T05:22:51.626447","column_name":"QUERY_ID","created_on":"2025-07-20T05:22:51.626440","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":905,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"VARCHAR(16777216)","type_generic":1,"uuid":"9d8ed44c-87f8-4555-9b4e-a5b153cebc9e","verbose_name":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT_DISTINCT(QUERY_ID)","optionName":"metric_z3banm4ekes_5parw0hvvfm","sqlExpression":null}],"orderby":[[{"aggregate":"COUNT_DISTINCT","column":{"advanced_data_type":null,"changed_on":"2025-07-20T05:22:51.626447","column_name":"QUERY_ID","created_on":"2025-07-20T05:22:51.626440","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":905,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"VARCHAR(16777216)","type_generic":1,"uuid":"9d8ed44c-87f8-4555-9b4e-a5b153cebc9e","verbose_name":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT_DISTINCT(QUERY_ID)","optionName":"metric_z3banm4ekes_5parw0hvvfm","sqlExpression":null},false]],"annotation_layers":[],"row_limit":15,"series_columns":["WAREHOUSE_NAME"],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["DATE"],"columns":["WAREHOUSE_NAME"],"aggregates":{"COUNT_DISTINCT(QUERY_ID)":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"COUNT_DISTINCT(QUERY_ID)":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"30__table","viz_type":"echarts_timeseries_line","slice_id":169,"x_axis":"DATE","time_grain_sqla":"P1D","x_axis_sort_asc":true,"metrics":[{"aggregate":"COUNT_DISTINCT","column":{"advanced_data_type":null,"changed_on":"2025-07-20T05:22:51.626447","column_name":"QUERY_ID","created_on":"2025-07-20T05:22:51.626440","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":905,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"VARCHAR(16777216)","type_generic":1,"uuid":"9d8ed44c-87f8-4555-9b4e-a5b153cebc9e","verbose_name":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT_DISTINCT(QUERY_ID)","optionName":"metric_z3banm4ekes_5parw0hvvfm","sqlExpression":null}],"groupby":["WAREHOUSE_NAME"],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"DATE"}],"order_desc":true,"row_limit":"15","truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"x_axis_title":"","x_axis_title_margin":15,"y_axis_title":"Queries","y_axis_title_margin":15,"y_axis_title_position":"Top","sort_series_type":"sum","color_scheme":"supersetColors","seriesType":"line","show_value":false,"only_total":true,"opacity":0.2,"markerSize":6,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","rich_tooltip":false,"showTooltipTotal":true,"showTooltipPercentage":true,"tooltipTimeFormat":"smart_date","y_axis_format":"SMART_NUMBER","minorSplitLine":false,"truncateXAxis":true,"y_axis_bounds":[null,null],"extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 1dbd8153-cb77-4b06-a4fc-06561a0e17e5
+version: 1.0.0
+dataset_uuid: d14836d8-c133-4406-82e5-0be45e265bed

@@ -1,0 +1,49 @@
+slice_name: Platform | Snowpipe Status
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: CREATED
+  color_scheme: googleCategory20c
+  dashboards:
+  - 48
+  datasource: 46__table
+  date_format: smart_date
+  donut: true
+  extra_form_data: {}
+  groupby:
+  - PIPE_STATUS
+  innerRadius: 38
+  label_line: true
+  label_type: key_value
+  labels_outside: true
+  metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: COUNT(DISTINCT DATABASE_NAME, SCHEMA_NAME, PIPE_NAME)
+    optionName: metric_ga971w1qxvk_76ov07fftgb
+    sqlExpression: COUNT(DISTINCT DATABASE_NAME, SCHEMA_NAME, PIPE_NAME)
+  number_format: SMART_NUMBER
+  outerRadius: 70
+  row_limit: 100
+  show_labels: true
+  show_labels_threshold: '0'
+  show_legend: false
+  show_total: true
+  slice_id: 426
+  sort_by_metric: true
+  viz_type: pie
+  annotation_layers: []
+cache_timeout: null
+uuid: cdb0a7fc-d612-4bd3-8ff8-1260a8ecbe50
+version: 1.0.0
+dataset_uuid: 166d14c1-50a0-4f04-b9d9-64606104db35

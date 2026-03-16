@@ -1,0 +1,61 @@
+slice_name: Platform | Snowpipe Data Loaded (GB)
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_pa19pd18k7_wbadvqd3uy
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    operatorId: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: DATE
+  conditional_formatting: []
+  dashboards:
+  - 48
+  datasource: 45__table
+  extra_form_data: {}
+  header_font_size: 0.3
+  metric:
+    aggregate: SUM
+    column:
+      advanced_data_type: null
+      changed_on: '2024-07-31T05:30:19.602631'
+      column_name: TOTAL_DATA_LOADED_GB
+      created_on: '2024-07-31T05:30:19.602629'
+      description: null
+      expression: null
+      extra: '{"warning_markdown":null}'
+      filterable: true
+      groupby: true
+      id: 2455
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL(38, 6)
+      type_generic: 0
+      uuid: 0f5315bd-49c5-4cec-ac87-ecf1aef04b6e
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(TOTAL_DATA_LOADED_GB)
+    optionName: metric_sf449dsqynp_le2l4ywa8qe
+    sqlExpression: null
+  slice_id: 438
+  subheader: ''
+  subheader_font_size: 0.15
+  time_format: smart_date
+  viz_type: big_number_total
+  y_axis_format: ~g
+  annotation_layers: []
+cache_timeout: null
+uuid: 0b299049-fbf6-4b17-acf0-dd4482ab84df
+version: 1.0.0
+dataset_uuid: 28908d7a-4d00-4747-a945-feee6679330f
